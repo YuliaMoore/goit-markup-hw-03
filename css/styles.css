@@ -31,6 +31,7 @@ h6 {
 
 ul {
   list-style: none;
+  padding: 0px;
 }
 
 .hidden {
@@ -52,11 +53,13 @@ ul {
   margin: auto;
 }
 
+
 /*---НАВІГАЦІЯ---*/
 .navigation .container {
   display: flex;
   align-items: center;
   height: 80px;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .navigation .main-nav {
@@ -363,19 +366,22 @@ footer {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   padding-left: 0px;
 }
+
+.projects-box {
+  border-left: 1px solid #eeeeee; 
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 24px;}
 
 .projects .title,
 .projects p {
   text-align: left;
-  margin-left: 24px;
 }
-
+.projects img {display: block;}
 .projects .item {
-  width: calc((100%-60px) / 3);
-  border: 1px solid #eeeeee;
+  flex-basis: calc((100%- 60px) / 3); 
   margin-right: 30px;
 }
 .projects .item:nth-child(3n) {
@@ -384,10 +390,6 @@ footer {
 
 .projects .item:not(:nth-last-child(3)) {
   margin-bottom: 30px;
-}
-.projects p {
-  margin-bottom: 20px;
-  margin-left: 24px;
 }
 
 .title-portfolio {
